@@ -1,0 +1,71 @@
+body {
+    height: 100%;
+    width: 100%;
+    //   background-image: url("../../assets/greeting.png");
+}
+
+.greeting1 {
+    margin-top: 50px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: xx-large;
+    color: rgb(136, 57, 4);
+}
+
+.greeting2 {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+}
+
+.contact-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: bolder;
+    color: rgb(85, 58, 18);
+    padding: 50px;
+}
+
+.contactus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.mat-card {
+    box-shadow: 2px 1px 2px 2px #000000;
+}
+
+.email {
+    height: 8rem;
+    width: 15rem;
+}
+
+mat-card-content {
+    padding: 30px;
+}
+.down{
+    margin-top: 5%; 
+}

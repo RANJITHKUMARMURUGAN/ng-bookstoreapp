@@ -1,0 +1,110 @@
+<br /> <br />
+<div class="container" *ngFor="let prod of productArray">
+    <div class="row" >
+        <div class="col-2">
+            <img src="{{prod.img}}">
+        </div>
+        <div class="col-10">
+            <h3>Dont't Make Me Think</h3>
+            <h5>be Steve Krung</h5>
+            <h1>Rs{{prod.amt}}</h1>
+        </div>
+    </div>
+
+    <div class="sub-add">
+        <button style="  height: 25px;
+        margin-right: 20px;
+                width: 25px;
+                text-align: center;
+                background-color: #f9f9f9;
+                border-radius: 11em;
+                border-color: #eee9e9;" (click)="inc(prod)"> 
+        </button><span>{{prod.qnt}}</span>
+        <button style="height: 25px;
+            margin-right: 20px;
+                width: 25px;
+                text-align: center;
+                background-color: #f9f9f9;
+                border-radius: 11em;
+                border-color: #eee9e9;"(click)="dec(prod)">-
+        </button><button style="height: 30px; width: 60px;font-size: 12px;
+        background-color:white;padding-top: 0em; margin-left: 10px; border: transparent;
+       ">Remove
+        </button>
+        
+    </div>
+    
+</div><br /> <br />
+<button class="btn-primary primary">PLACE ORDER</button>
+
+<div class="container">
+    <div class="secon-part">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card-title-header">
+                    <h2 >Customer Details</h2>    
+                </div>
+                <div class="row justify-content-md">
+                    <div class="col-lg-6">
+                        <form class="row g-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Name"  name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Phone Number" name="phone" required>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Pincode"  name="pincode" required>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Locality"  name="Locality" required>
+                            </div>
+                            <div class="input-group">
+                                <textarea class="form-control" placeholder="Address" name="Address"></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="city/town"  name="city" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Landmark"  name="Landmark" required>
+                            </div> 
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="defaultInline1">
+                                    <label class="custom-control-label" for="defaultInline1">Home</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="defaultInline2">
+                                    <label class="custom-control-label" for="defaultInline2">Work</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="defaultInline3">
+                                    <label class="custom-control-label" for="defaultInline3">Other</label>
+                                </div>
+                                <button class="btn-primary">CONTINUE</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div><br /> <br />
+
+<div class="container">
+    <h2>Order Summery</h2>
+    <div class="row">
+        <div class="col-2">
+            <img src="../../assets/Book1.png">
+        </div>
+        <div class="col-10">
+            <h3>Dont't Make Me Think</h3>
+            <h5>be Steve Krung</h5>
+            <h1>Rs.1500</h1>
+        </div>
+    </div>
+    <button class="btn-primary primary" routerLink='/order'>CHECKOUT</button>
+</div>
